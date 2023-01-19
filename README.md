@@ -6,4 +6,54 @@
 
 Страница датасета на Kaggle: https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents/versions/10
 
+
 ![mlops](media/mlops.png)
+
+Установка Poetry:
+
+```
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Установка python-зависимостей:
+
+```
+poetry install
+```
+
+Запуск блокнота:
+
+```
+poetry run jupyter notebook &
+```
+
+Запуск MLFLow:
+
+```
+poetry run mlflow ui &
+```
+
+Инициализация Apache Airflow (один раз):
+
+```
+AIRFLOW_HOME=$(pwd) poetry run airflow db init
+
+AIRFLOW_HOME=$(pwd) poetry run airflow users create \
+    --username admin \
+    --firstname Peter \
+    --lastname Parker \
+    --role Admin \
+    --email spiderman@superhero.org
+```
+
+Установите в airflow.cfg:
+```
+load_examples = False
+```
+
+Запуск Apache Airflow:
+
+```
+AIRFLOW_HOME=$(pwd) poetry run airflow webserver --port 8080 &
+AIRFLOW_HOME=$(pwd) poetry run airflow scheduler &
+```
