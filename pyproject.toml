@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ml"
+version = "0.1.0"
+description = ""
+authors = ["Valeriy Manenkov <valeriy@manenkov.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+llvmlite = "^0.39.1"
+numpy = "^1.23.5"
+numba = "^0.56.4"
+mlflow = {extras = ["extras"], version = "^2.1.1"}
+jupyterlab = "^3.5.2"
+notebook = "^6.5.2"
+voila = "^0.4.0"
+apache-airflow = {version = "2.5.0", extras = ["celery"]}
+bentoml = {extras = ["all"], version = "^1.0.12"}
+dvc = "^2.38.1"
+xgboost = "^1.7.2"
+psycopg2 = "^2.9.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MLFlow
+mlruns/
+mlartifacts/
+
+# Apache Airflow
+/logs/
+airflow-webserver.pid
+airflow.cfg
+airflow.db
+webserver_config.py
