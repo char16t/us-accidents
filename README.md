@@ -6,4 +6,4 @@
 
 Страница датасета на Kaggle: https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents/versions/10
 
-![mlops](mlops.png)
+![mlops](media/mlops.png)
