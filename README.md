@@ -6,6 +6,8 @@
 
 Страница датасета на Kaggle: https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents/versions/10
 
+Блокнот: [notebooks/us_accidents.ipynb](notebooks/us_accidents.ipynb)
+
 ## MLOps
 
 DAG в Apache Airflow собирает модель, регистрирует её в MLFlow, собирает Docker-образ с BentoML и моделью внутри. Она доступна по http://localhost:5001. Данные версионируются в DVC отдельно от кода. Для экспериментов &mdash; Jupyter Notebook.
