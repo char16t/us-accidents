@@ -4913,13 +4913,14 @@ files = [
 
 [[package]]
 name = "mlflow"
-version = "2.1.1"
+version = "2.2.1"
 description = "MLflow: A Platform for ML Development and Productionization"
 category = "main"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "mlflow-2.1.1-py3-none-any.whl", hash = "sha256:42cfb0c4c316398217237cc08f2b08604fb29f21057c83d6705157d18b47565c"},
+    {file = "mlflow-2.2.1-py3-none-any.whl", hash = "sha256:861dc2f0d965daaa67d9925b8f1ea155317fb7c4ddee5133d3ec705f7885a0a2"},
+    {file = "mlflow-2.2.1.tar.gz", hash = "sha256:85a19929292aafa08cc5c8d297c1d0e666ace775a59a414c5f67cb65967fe967"},
 ]
 
 [package.dependencies]
@@ -4935,7 +4936,7 @@ Flask = "<3"
 gitpython = ">=2.1.0,<4"
 google-cloud-storage = {version = ">=1.30.0", optional = true, markers = "extra == \"extras\""}
 gunicorn = {version = "<21", markers = "platform_system != \"Windows\""}
-importlib-metadata = ">=3.7.0,<4.7.0 || >4.7.0,<6"
+importlib-metadata = ">=3.7.0,<4.7.0 || >4.7.0,<7"
 Jinja2 = [
     {version = ">=2.11,<4", markers = "platform_system != \"Windows\""},
     {version = ">=3.0,<4", markers = "platform_system == \"Windows\""},
@@ -4946,12 +4947,12 @@ matplotlib = "<4"
 mlserver = {version = ">=1.2.0.dev13", optional = true, markers = "extra == \"extras\""}
 mlserver-mlflow = {version = ">=1.2.0.dev13", optional = true, markers = "extra == \"extras\""}
 numpy = "<2"
-packaging = "<23"
-pandas = "<2"
+packaging = "<24"
+pandas = "<3"
 prometheus-flask-exporter = {version = "*", optional = true, markers = "extra == \"extras\""}
 protobuf = ">=3.12.0,<5"
 pyarrow = [
-    {version = ">=4.0.0,<11"},
+    {version = ">=4.0.0,<12"},
     {version = "*", optional = true, markers = "extra == \"extras\""},
 ]
 pysftp = {version = "*", optional = true, markers = "extra == \"extras\""}
@@ -4960,20 +4961,17 @@ pyyaml = ">=5.1,<7"
 querystring-parser = "<2"
 requests = ">=2.17.3,<3"
 requests-auth-aws-sigv4 = {version = "*", optional = true, markers = "extra == \"extras\""}
-scikit-learn = [
-    {version = "<2"},
-    {version = "*", optional = true, markers = "extra == \"extras\""},
-]
+scikit-learn = "<2"
 scipy = "<2"
 shap = ">=0.40,<1"
-sqlalchemy = ">=1.4.0,<2"
+sqlalchemy = ">=1.4.0,<3"
 sqlparse = ">=0.4.0,<1"
 virtualenv = {version = "*", optional = true, markers = "extra == \"extras\""}
 waitress = {version = "<3", markers = "platform_system == \"Windows\""}
 
 [package.extras]
 aliyun-oss = ["aliyunstoreplugin"]
-extras = ["azureml-core (>=1.2.0)", "boto3", "google-cloud-storage (>=1.30.0)", "kubernetes", "mlserver (>=1.2.0.dev13)", "mlserver-mlflow (>=1.2.0.dev13)", "prometheus-flask-exporter", "pyarrow", "pysftp", "requests-auth-aws-sigv4", "scikit-learn", "virtualenv"]
+extras = ["azureml-core (>=1.2.0)", "boto3", "google-cloud-storage (>=1.30.0)", "kubernetes", "mlserver (>=1.2.0.dev13)", "mlserver-mlflow (>=1.2.0.dev13)", "prometheus-flask-exporter", "pyarrow", "pysftp", "requests-auth-aws-sigv4", "virtualenv"]
 sqlserver = ["mlflow-dbstore"]
 
 [[package]]
@@ -6086,6 +6084,13 @@ files = [
     {file = "Pillow-9.4.0-1-cp39-cp39-macosx_10_10_x86_64.whl", hash = "sha256:b8c2f6eb0df979ee99433d8b3f6d193d9590f735cf12274c108bd954e30ca858"},
     {file = "Pillow-9.4.0-1-pp38-pypy38_pp73-macosx_10_10_x86_64.whl", hash = "sha256:b70756ec9417c34e097f987b4d8c510975216ad26ba6e57ccb53bc758f490dab"},
     {file = "Pillow-9.4.0-1-pp39-pypy39_pp73-macosx_10_10_x86_64.whl", hash = "sha256:43521ce2c4b865d385e78579a082b6ad1166ebed2b1a2293c3be1d68dd7ca3b9"},
+    {file = "Pillow-9.4.0-2-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:9d9a62576b68cd90f7075876f4e8444487db5eeea0e4df3ba298ee38a8d067b0"},
+    {file = "Pillow-9.4.0-2-cp311-cp311-macosx_10_10_x86_64.whl", hash = "sha256:87708d78a14d56a990fbf4f9cb350b7d89ee8988705e58e39bdf4d82c149210f"},
+    {file = "Pillow-9.4.0-2-cp37-cp37m-macosx_10_10_x86_64.whl", hash = "sha256:8a2b5874d17e72dfb80d917213abd55d7e1ed2479f38f001f264f7ce7bae757c"},
+    {file = "Pillow-9.4.0-2-cp38-cp38-macosx_10_10_x86_64.whl", hash = "sha256:83125753a60cfc8c412de5896d10a0a405e0bd88d0470ad82e0869ddf0cb3848"},
+    {file = "Pillow-9.4.0-2-cp39-cp39-macosx_10_10_x86_64.whl", hash = "sha256:9e5f94742033898bfe84c93c831a6f552bb629448d4072dd312306bab3bd96f1"},
+    {file = "Pillow-9.4.0-2-pp38-pypy38_pp73-macosx_10_10_x86_64.whl", hash = "sha256:013016af6b3a12a2f40b704677f8b51f72cb007dac785a9933d5c86a72a7fe33"},
+    {file = "Pillow-9.4.0-2-pp39-pypy39_pp73-macosx_10_10_x86_64.whl", hash = "sha256:99d92d148dd03fd19d16175b6d355cc1b01faf80dae93c6c3eb4163709edc0a9"},
     {file = "Pillow-9.4.0-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:2968c58feca624bb6c8502f9564dd187d0e1389964898f5e9e1fbc8533169157"},
     {file = "Pillow-9.4.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:c5c1362c14aee73f50143d74389b2c158707b4abce2cb055b7ad37ce60738d47"},
     {file = "Pillow-9.4.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:bd752c5ff1b4a870b7661234694f24b1d2b9076b8bf337321a814c612665f343"},
@@ -7346,6 +7351,8 @@ files = [
     {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:045e0626baf1c52e5527bd5db361bc83180faaba2ff586e763d3d5982a876a9e"},
     {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-macosx_12_6_arm64.whl", hash = "sha256:721bc4ba4525f53f6a611ec0967bdcee61b31df5a56801281027a3a6d1c2daf5"},
     {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl", hash = "sha256:41d0f1fa4c6830176eef5b276af04c89320ea616655d01327d5ce65e50575c94"},
+    {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-win32.whl", hash = "sha256:f6d3d39611ac2e4f62c3128a9eed45f19a6608670c5a2f4f07f24e8de3441d38"},
+    {file = "ruamel.yaml.clib-0.2.7-cp311-cp311-win_amd64.whl", hash = "sha256:da538167284de58a52109a9b89b8f6a53ff8437dd6dc26d33b57bf6699153122"},
     {file = "ruamel.yaml.clib-0.2.7-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:4b3a93bb9bc662fc1f99c5c3ea8e623d8b23ad22f861eb6fce9377ac07ad6072"},
     {file = "ruamel.yaml.clib-0.2.7-cp36-cp36m-macosx_12_0_arm64.whl", hash = "sha256:a234a20ae07e8469da311e182e70ef6b199d0fbeb6c6cc2901204dd87fb867e8"},
     {file = "ruamel.yaml.clib-0.2.7-cp36-cp36m-manylinux2014_aarch64.whl", hash = "sha256:15910ef4f3e537eea7fe45f8a5d19997479940d9196f357152a09031c5be59f3"},
@@ -8943,4 +8950,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "7e49193eba49b60e0e980800ad857e77c858bf30bf89894b1218fbffc7b4af3a"
+content-hash = "0abfdd566f37b2a8a25d1da5fd7951acc86ac151ef5eebd86c13ab574a87fb50"

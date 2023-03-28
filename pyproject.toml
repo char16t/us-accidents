@@ -10,7 +10,7 @@ python = "^3.10"
 llvmlite = "^0.39.1"
 numpy = "^1.23.5"
 numba = "^0.56.4"
-mlflow = {extras = ["extras"], version = "^2.1.1"}
+mlflow = {extras = ["extras"], version = "^2.2.1"}
 jupyterlab = "^3.5.2"
 notebook = "^6.5.2"
 voila = "^0.4.0"
